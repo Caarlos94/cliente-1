@@ -1,0 +1,206 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  ;
+}
+
+.hero {
+  background-image: linear-gradient(45deg, #ff9a9dbf 0%, #fad0c4ab 99%, #fad0c4ae 100%), url("./img/header.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.75rem;
+}
+
+.svg-wave {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+.cubre {
+  background-color: #FFF;
+  width: 100%;
+  height: 10px;
+  position: relative;
+  top: -5px;
+  z-index: 50;
+}
+
+/* primera seccion */
+.ilustracion {
+  width: 90%;
+}
+
+.ilust {
+  text-align: center;
+}
+
+.texto-primer-sec {
+  text-align: justify;
+}
+
+/* separador */
+.info {
+  background-color: #F5576c;
+  color: #FFF;
+  padding: 3rem 5.5rem 3rem 5.5rem;
+}
+
+/* Servicios */
+.servicios {
+  margin: 3rem 0;
+}
+
+.servicio-card {
+  height: 280px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: trasform 0.5s ease;
+}
+
+.servicio-card:hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+.servicio-card img {
+  width: 50px
+}
+
+/* Galeria */
+.galeria {
+  padding: 3rem 0;
+  background-color: #eee;
+}
+
+.galeria img {
+  width: 100%;
+}
+
+.galeria img:hover {
+  transform: scale(1.025);
+  cursor: pointer;
+}
+
+.galeria-contenedor {
+  row-gap: 1rem;
+}
+
+/* Informacion final */
+.ilustracion-2 {
+  width: 75%;
+}
+
+.info-last-contenedor {
+  margin: 3rem 0;
+}
+
+.loader {
+  display: none;
+}
+
+/* Contacto */
+.contacto {
+  background-color: #F5576c;
+  padding:25px;
+}
+
+.contacto-container {
+  margin: 0 auto;
+  min-height: 400px;
+  width: 90%;
+}
+
+.contacto-container form {
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  background-color: #f5f6f7;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.contacto-container textarea {
+  resize: none;
+}
+
+.wave {
+  position: relative;
+  bottom: -5px;
+}
+
+/* Ventana Modal dentro de Contactos */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  background-color: #0008;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.modal-container div {
+  position: relative;
+}
+
+#gracias:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contact-modal-response {
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: white;
+}
+
+.contact-modal-response svg {
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 435px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .ilustracion {
+    margin-bottom: 1rem;
+  }
+  .info {
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  }
+  .row {
+    row-gap: 1rem;
+  }
+}
